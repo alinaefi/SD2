@@ -2,10 +2,12 @@
 <html>
     <head>
         <script>
-            function color() {
-                document.getElementById("paragraph").innerHTML = element.style['color'] = "red";
+            function redColor() {
+                document.getElementById("paragraph").style['color'] = "red";
             }
-
+            function blueColor() {
+                document.getElementById("paragraph").style['color'] = "blue";
+            }
         </script>
 
     </head>
@@ -14,7 +16,9 @@
         <p id="paragraph">
             I am a paragraph!!! 
         </p>
-        <input type="button" value="I am a button" onclick="color()">
+        <input type="button" value="I am a button" onclick="redColor()">
+        <br>
+        <input type="button" value="I am a  blue button" onclick="blueColor()">
     </body>
 
 
